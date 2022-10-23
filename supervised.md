@@ -19,13 +19,17 @@ import sys
 import os
 
 IN_COLAB = 'google.colab' in sys.modules
-if IN_COLAB:
+CLONED = 0
+if IN_COLAB and not CLONED:
     # clone the repo
     !git clone https://github.com/technogleb/ts_walkthrough
+    CLONED = 1
     # append to sys.path
     sys.path.append('/content/ts_walkthrough')
     # change working directory to project root
     os.chdir('/content/ts_walkthrough')
+    # install requirements
+    !pip install -r requirements.txt
 ```
 
 ```python
