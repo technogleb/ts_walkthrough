@@ -12,6 +12,22 @@ jupyter:
     name: python3
 ---
 
+```python
+# CHECK IF RUNNING INSIDE GOOGLE.COLAB
+
+import sys
+import os
+
+IN_COLAB = 'google.colab' in sys.modules
+if IN_COLAB:
+    # clone the repo
+    !git clone https://github.com/technogleb/ts_walkthrough
+    # append to sys.path
+    sys.path.append('/content/ts_walkthrough')
+    # change working directory to project root
+    os.chdir('/content/ts_walkthrough')
+```
+
 # Практический обзор основных задач анализа временных рядов
 
 
