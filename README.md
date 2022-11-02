@@ -17,6 +17,9 @@
 
 # Contents
 
+> All materials also have solution versions, you can identify those by _solution.ipynb
+prefixes
+
 **ts_walkthrough** - main jupyter notebook with all theoretical materials and tasks, you
 should start here
 
