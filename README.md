@@ -35,4 +35,4 @@ task)
 
 **data** - contains all series, used in tutorial
 
-
+**test.md** - short test on basic time series concepts
